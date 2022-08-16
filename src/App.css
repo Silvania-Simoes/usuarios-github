@@ -1,0 +1,21 @@
+.App {
+  background-color: #5f5aed;
+}
+
+.selecaoFavorito {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  background-color: #120f66!important;
+  color: #fff!important;
+}
+
+.title {
+  width: 100%;
+  height: 10vh;
+  background-color: #120f66;
+  color: #fff!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
