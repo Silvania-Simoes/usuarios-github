@@ -3,8 +3,7 @@ import { useDispatch } from 'react-redux';
 import { changeFavoritos } from '../redux/favoritosSlice';
 import { changeuserGitHub } from '../redux/userGitHubSlice';
 import { useSelector } from 'react-redux';
-
-  import { ImHeart } from "react-icons/im";
+import { ImHeart } from "react-icons/im";
 
   
   function Favoritos() {
@@ -32,7 +31,7 @@ import { useSelector } from 'react-redux';
             <img src={repo.avatar_url} class="card-img-top rounded" alt="Avatar"/>
             <div class="card-body d-flex flex-column p-0 pt-4">
               <h5 key={repo.id} onClick={() => handleFavorite(repo.id)} class="card-title">Name: {repo.login} {repo.favorite ? <ImHeart color='#e81526' /> : <ImHeart color='#a39e9f' />}</h5>
-              <a href={repo.html_url} class="btn btn-primary">Exibir o repositórios</a>
+              <a href={repo.html_url} target="_blank" class="btn btn-primary">Exibir o repositórios</a>
             </div>
           </div>
           ))}

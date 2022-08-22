@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { changeuserGitHub } from './redux/userGitHubSlice';
+import Navbar from './components/Navbar';
 import Favoritos from "./components/Favoritos";
 import SelecaoFavoritos from './components/SelecaoFavoritos';
 import './App.css';
@@ -20,9 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className='title'>
-        <strong>Usuários do GitHub</strong>
-      </div>
+      <Navbar/>
       <Favoritos/>
       <SelecaoFavoritos/>
     </div>
